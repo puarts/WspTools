@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ae193771-6443-4b7c-9b6b-9c6a5eaeb067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{0ef1d48e-87c4-460d-bf4c-cb9a8e11ce18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WspCudaDefine.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="WspFnGpuCS.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="WspFnGpuImgFilter.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="WspFnGpuImgProc.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="WspFnGpuMatrix.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="WspFnGpuVector.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="fn-imgproc_gpu-gpl.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="WspFnGpuImgFilter.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuImgFilter_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuImgProc.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuImgProc_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuInline.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuMatrix.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuMatrix_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuStd.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuVector.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="WspFnGpuVector_kernel.cu">
+      <Filter>Source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fn-imgproc_gpu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

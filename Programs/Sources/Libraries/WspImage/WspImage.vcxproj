@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C590292C-3997-4240-A3B4-A0751590FC72}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>wsp::img</RootNamespace>
+    <ProjectName>WspImage</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\Include\wsp\image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\Include\wsp\image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Include\wsp\image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Include\wsp\image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="../../../Include/wsp/image/cl-imagehandler.h" />
+    <ClInclude Include="../../../Include/wsp/image/fn-image_log.h" />
+    <ClInclude Include="../../../Include/wsp/image/fn-imgfilter.h" />
+    <ClInclude Include="../../../Include/wsp/image/fn-imgio.h" />
+    <ClInclude Include="../../../Include/wsp/image/fn-imgproc.h" />
+    <ClInclude Include="../../../Include/wsp/image/fn-type_conversion.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-histogram.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-imageseq.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_extension.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_filter.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_filter_plugin_interface.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-layeredimage.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-painter.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-stereoimage.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-uniontypeimage.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-detection.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imgfilter.h" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imglayout.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imgproc.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/_define_image.h" />
+    <ClInclude Include="../../../Include/wsp/image/_define_imagecore.h" />
+    <ClInclude Include="../../../Include/wsp/image/_fn-imgio.h" />
+    <ClInclude Include="../../../Include/wsp/image/_fn-imgproc.h" />
+    <ClInclude Include="../../../Include/wsp/image/_image_types.h" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_cl-image.h" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgblend.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgfilter.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgio.h" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgproc.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-img_mem_manag.hpp" />
+    <ClInclude Include="../../../Include/wsp/image/_WspImageSeq_ptr1.h" />
+    <ClInclude Include="../../../Include/wsp/image/_WspImageSeq_ptr2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cl-imagehandler.cpp" />
+    <ClCompile Include="fn-imgfilter.cpp" />
+    <ClCompile Include="fn-imgio.cpp" />
+    <ClCompile Include="fn-imgproc.cpp" />
+    <ClCompile Include="fn-imgproc_3dcalib.cpp" />
+    <ClCompile Include="fn-type_conversion.cpp" />
+    <ClCompile Include="WspStereoImg.cpp" />
+    <ClCompile Include="_fn-imgio.cpp" />
+    <ClCompile Include="_fn-imgproc.cpp" />
+    <ClCompile Include="_include_headers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Include/wsp/image/tpl_cl-image.inl" />
+    <None Include="../../../Include/wsp/image/tpl_cl-imageseq.inl" />
+    <None Include="../../../Include/wsp/image/tpl_cl-image_extension.inl" />
+    <None Include="../../../Include/wsp/image/tpl_cl-image_filter.inl" />
+    <None Include="../../../Include/wsp/image/tpl_cl-image_filter_plugin_interface.inl" />
+    <None Include="../../../Include/wsp/image/tpl_cl-painter.inl" />
+    <None Include="../../../Include/wsp/image/tpl_fn-detection.inl" />
+    <None Include="../../../Include/wsp/image/tpl_fn-imglayout.inl" />
+    <None Include="../../../Include/wsp/image/tpl_fn-imgproc.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_cl-image.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgblend.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgfilter.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgio.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgproc.inl" />
+    <None Include="../../../Include/wsp/image/_tpl_fn-img_mem_manag.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WspCommon\WspCommon.vcxproj">
+      <Project>{f4729eff-a7a1-42ad-9f9e-1cbbaca7933c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspLibpng\WspLibpng.vcxproj">
+      <Project>{ed3832e6-1302-4a35-956a-e4aa8e12a02d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspMath\WspMath.vcxproj">
+      <Project>{493134a5-169e-47d3-be30-862ae3af6217}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

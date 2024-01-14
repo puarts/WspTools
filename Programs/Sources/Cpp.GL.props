@@ -1,0 +1,11 @@
+﻿
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" TreatAsLocalProperty="Platform">
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Externals\glew-1.11.0\include;..\..\..\..\Externals\freeglut\include;..\..\..\Externals\glm-0.9.7.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\Externals\glew-1.11.0\lib\Release\$(Platform)\;..\..\..\..\Externals\freeglut\lib\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>  
+</Project>

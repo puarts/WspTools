@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../../../Include/wsp/sound/cl-midi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/fn-audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/fn-midi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/fn-midiutil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/fn-sound_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/sound_result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/test-midi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/tpl_cl-sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/tpl_fn-audio-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/tpl_fn-audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/wave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/_define_sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/_define_soundcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/sound/_midi_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cl-midi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-midiutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-midi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

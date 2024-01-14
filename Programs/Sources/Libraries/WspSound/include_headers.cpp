@@ -1,0 +1,10 @@
+#include <wsp/sound/_define_sound.h>
+#include <wsp/sound/_define_soundcore.h>
+#include <wsp/sound/_midi_types.h>
+#include <wsp/sound/cl-midi.hpp>
+#include <wsp/sound/fn-audio.h>
+#include <wsp/sound/fn-midi.h>
+#include <wsp/sound/fn-midiutil.hpp>
+#include <wsp/sound/sound_result.h>
+#include <wsp/sound/tpl_cl-sound.h>
+#include <wsp/sound/fn-sound_log.h>

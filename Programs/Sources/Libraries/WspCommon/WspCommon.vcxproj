@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-licensing_handler.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-std_param_def_list.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-string.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-string_list.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-text_file_loader.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-text_stream.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-tree_node.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-uniontypevector.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\cl-vector.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\common_result.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\common_result_converter.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\common_types.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\directory_utils.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-array-gpl.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-code_optimization.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-common_api.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-debug.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-encryption.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-io.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-string.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\fn-util.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\result.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\ScopedFileOpen.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\st-stdparam.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\Stopwatch.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-conversion_maya.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-function_lane.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-grid_cell.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-vector.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-vector2.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-vector3.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-vector4.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\tpl_cl-vector_n.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\WspFloat4.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\WspPoint.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\WspRgb.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_cl-noncopyable.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_cl-std_param.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_ctypes.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_define_commoncore.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_define_commonutil.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_define_global.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_define_qt.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_tpl_cl-stackarray.h" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_tpl_fn-array.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_tpl_fn-core.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_tpl_fn-mem_manag.hpp" />
+    <ClInclude Include="..\..\..\Include\wsp\common\_tpl_fn-sort.hpp" />
+    <ClInclude Include="_cl-noncopyable.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cl-licensing_handler.cpp" />
+    <ClCompile Include="cl-std_param.cpp" />
+    <ClCompile Include="cl-string.cpp" />
+    <ClCompile Include="cl-string_list.cpp" />
+    <ClCompile Include="cl-text_file_loader.cpp" />
+    <ClCompile Include="cl-text_stream.cpp" />
+    <ClCompile Include="cl-uniontypevector.cpp" />
+    <ClCompile Include="common_result.cpp" />
+    <ClCompile Include="directory_utils.cpp" />
+    <ClCompile Include="fn-array.cpp" />
+    <ClCompile Include="fn-code_optimization.cpp" />
+    <ClCompile Include="fn-common_api.cpp" />
+    <ClCompile Include="fn-debug.cpp" />
+    <ClCompile Include="fn-encryption.cpp" />
+    <ClCompile Include="fn-io.cpp" />
+    <ClCompile Include="fn-string.cpp" />
+    <ClCompile Include="fn-string_util.cpp" />
+    <ClCompile Include="fn-util.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="st-stdparam.cpp" />
+    <ClCompile Include="_define_commoncore.cpp" />
+    <ClCompile Include="_define_global.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Include\wsp\common\cl-string.inl" />
+    <None Include="..\..\..\Include\wsp\common\tpl_cl-vector.inl" />
+    <None Include="..\..\..\Include\wsp\common\tpl_cl-vector_n.inl" />
+    <None Include="..\..\..\Include\wsp\common\_tpl_fn-array.inl" />
+    <None Include="..\..\..\Include\wsp\common\_tpl_fn-mem_manag.inl" />
+    <None Include="..\..\..\Include\wsp\common\_tpl_fn-sort.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4729EFF-A7A1-42AD-9F9E-1CBBACA7933C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WspCore</RootNamespace>
+    <ProjectName>WspCommon</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Cpp.DynamicLibrary.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\Include\wsp\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Include\wsp\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\Include\wsp\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Include\wsp\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{131F9179-5D16-43F3-A006-DCB2BE24CA6D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WspGui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\Cpp.DynamicLibrary.props" />
+  <Import Project="..\..\Cpp.GL.props" />
+  <Import Project="..\..\Cpp.Qt.props" />
+  <Import Project="..\..\Cpp.Libav.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>USE_GL;WspGui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freeglut.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>set IncludeDir=..\..\..\Include\wsp\gui
+if not exist %IncludeDir% mkdir %IncludeDir%
+if exist *.h copy *.h %IncludeDir%
+if exist *.hpp copy *.hpp %IncludeDir%
+if exist *.inl copy *.inl %IncludeDir%</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cl-qt_abstract_mdisubwin.cpp" />
+    <ClCompile Include="cl-qt_depth_to_mesh_view.cpp" />
+    <ClCompile Include="cl-qt_filepath_line.cpp" />
+    <ClCompile Include="cl-qt_glview.cpp" />
+    <ClCompile Include="cl-qt_glwidget.cpp" />
+    <ClCompile Include="cl-qt_histogram_viewer.cpp" />
+    <ClCompile Include="cl-qt_image_filter_plugin_action.cpp" />
+    <ClCompile Include="cl-qt_image_proc_param_dialog.cpp" />
+    <ClCompile Include="cl-qt_image_seq_dialog.cpp" />
+    <ClCompile Include="cl-qt_image_seq_view.cpp" />
+    <ClCompile Include="cl-qt_paint_area.cpp" />
+    <ClCompile Include="cl-qt_param_dialog.cpp" />
+    <ClCompile Include="cl-qt_render_area.cpp" />
+    <ClCompile Include="cl-qt_slider_delegate.cpp" />
+    <ClCompile Include="cl-qt_spinbox_delegate_double.cpp" />
+    <ClCompile Include="cl-qt_spinbox_delegate_int.cpp" />
+    <ClCompile Include="cl-qt_text_number.cpp" />
+    <ClCompile Include="cl-qt_unit_param_widget.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_abstract_mdisubwin.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_depth_to_mesh_view.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_filepath_line.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_glview.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_glwidget.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_histogram_viewer.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_image_filter_plugin_action.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_image_proc_param_dialog.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_image_seq_dialog.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_image_seq_view.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_layer_view.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_paint_area.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_param_dialog.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_render_area.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_slider.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_slider_delegate.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_spinbox_delegate_double.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_spinbox_delegate_int.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_text_edit.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_text_number.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_transform_param_widget.hpp.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_cl-qt_unit_param_widget.hpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cl-qt_abstract_mdisubwin.hpp">
+      <Message>Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command>"$(QTDIR)\bin\$(Platform)\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -D_CONSOLE -D_DEBUG -D_UNICODE -DUNICODE -DWIN32 -I"." -I".\GeneratedFiles" -I".\GeneratedFiles\$(Configuration)"
+</Command>
+      <AdditionalInputs>$(QTDIR)\bin\$(Platform)\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cl-qt_depth_to_mesh_view.hpp">
+      <Message>Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command>"$(QTDIR)\bin\$(Platform)\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -D_CONSOLE -D_DEBUG -D_UNICODE -DUNICODE -DWIN32 -I"." -I".\GeneratedFiles" -I".\GeneratedFiles\$(Configuration)"
+</Command>
+      <AdditionalInputs>$(QTDIR)\bin\$(Platform)\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cl-qt_filepath_line.hpp">
+      <Message>Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command>"$(QTDIR)\bin\$(Platform)\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -D_CONSOLE -D_DEBUG -D_UNICODE -DUNICODE -DWIN32 -I"." -I".\GeneratedFiles" -I".\GeneratedFiles\$(Configuration)"
+</Command>
+      <AdditionalInputs>$(QTDIR)\bin\$(Platform)\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cl-qt_glview.hpp">
+      <Message>Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command>"$(QTDIR)\bin\$(Platform)\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -D_CONSOLE -D_DEBUG -D_UNICODE -DUNICODE -DWIN32 -I"." -I".\GeneratedFiles" -I".\GeneratedFiles\$(Configuration)"
+</Command>
+      <AdditionalInputs>$(QTDIR)\bin\$(Platform)\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cl-qt_glwidget.hpp">
+      <Message>Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command>"$(QTDIR)\bin\$(Platform)\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -D_CONSOLE -D_DEBUG -D_UNICODE -DUNICODE -DWIN32 -I"." -I".\GeneratedFiles" -I".\GeneratedFiles\$(Configuration)"
+</Command>
+      <AdditionalInputs>$(QTDIR)\bin\$(Platform)\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs>.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="cl-qt_histogram_viewer.hpp" />
+    <ClInclude Include="cl-qt_image_filter_plugin_action.hpp" />
+    <ClInclude Include="cl-qt_image_proc_param_dialog.hpp" />
+    <ClInclude Include="cl-qt_image_seq_dialog.hpp" />
+    <ClInclude Include="cl-qt_image_seq_view.hpp" />
+    <ClInclude Include="cl-qt_layer_view.hpp" />
+    <ClInclude Include="cl-qt_paint_area.hpp" />
+    <ClInclude Include="cl-qt_param_dialog.hpp" />
+    <ClInclude Include="cl-qt_render_area.hpp" />
+    <ClInclude Include="cl-qt_slider.hpp" />
+    <ClInclude Include="cl-qt_slider_delegate.hpp" />
+    <ClInclude Include="cl-qt_spinbox_delegate_double.hpp" />
+    <ClInclude Include="cl-qt_spinbox_delegate_int.hpp" />
+    <ClInclude Include="cl-qt_text_edit.hpp" />
+    <ClInclude Include="cl-qt_text_number.hpp" />
+    <ClInclude Include="cl-qt_transform_param_widget.hpp" />
+    <ClInclude Include="cl-qt_unit_param_widget.hpp" />
+    <ClInclude Include="fn-gui_io.h" />
+    <ClInclude Include="interfaces.h" />
+    <ClInclude Include="_define_gui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WspCommon\WspCommon.vcxproj">
+      <Project>{f4729eff-a7a1-42ad-9f9e-1cbbaca7933c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspGraphics\WspGraphics.vcxproj">
+      <Project>{53125f18-aa5b-4720-8b17-a1d9e42681db}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspImage\WspImage.vcxproj">
+      <Project>{c590292c-3997-4240-a3b4-a0751590fc72}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspMath\WspMath.vcxproj">
+      <Project>{493134a5-169e-47d3-be30-862ae3af6217}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspMultimedia\WspMultimedia.vcxproj">
+      <Project>{61fa3ce3-1de6-4aeb-8eab-c63b9576b3f1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspOpenGL\WspOpenGL.vcxproj">
+      <Project>{98b69ea6-475f-4167-9e89-29141799b345}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspSound\WspSound.vcxproj">
+      <Project>{0ec6d261-8f14-44e9-97e6-cc8df09e64ad}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspVideo\WspVideo.vcxproj">
+      <Project>{9de7a71f-dc74-4389-b1c3-e8c1de98cd11}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WspXerces\WspXerces.vcxproj">
+      <Project>{43990f85-8959-41f9-a2c1-08e44fd97def}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

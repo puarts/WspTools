@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../../../Include/wsp/image/cl-imagehandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/fn-image_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/fn-imgfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/fn-imgio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/fn-imgproc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/fn-type_conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-imageseq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_extension.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_filter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-image_filter_plugin_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-layeredimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-painter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-stereoimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_cl-uniontypeimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-detection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imgfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imglayout.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/tpl_fn-imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_define_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_define_imagecore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_fn-imgio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_fn-imgproc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_image_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_cl-image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgblend.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgfilter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_tpl_fn-img_mem_manag.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_WspImageSeq_ptr1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../../../Include/wsp/image/_WspImageSeq_ptr2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WspStereoImg.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_fn-imgio.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_fn-imgproc.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cl-imagehandler.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-imgfilter.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-imgproc.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-imgproc_3dcalib.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_include_headers.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-type_conversion.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fn-imgio.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../Include/wsp/image/tpl_cl-image.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_cl-imageseq.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_cl-image_extension.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_cl-image_filter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_cl-image_filter_plugin_interface.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_cl-painter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_fn-detection.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_fn-imglayout.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/tpl_fn-imgproc.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_cl-image.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgblend.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgfilter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgio.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_fn-imgproc.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="../../../Include/wsp/image/_tpl_fn-img_mem_manag.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
