@@ -1,0 +1,15 @@
+node_modules
+x64
+Win32
+.vs
+*.user
+.vscode
+Outputs
+Debug
+bin
+obj
+*.xcodeproj
+*.xcworkspace
+tmp
+*.suo
+*.sdf
